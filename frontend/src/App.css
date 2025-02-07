@@ -1,0 +1,23 @@
+i.bi { 
+  vertical-align: baseline !important;
+  margin-right: 0.5rem !important; 
+}
+
+.tt-capitalize {
+  text-transform: capitalize;
+}
+
+span.required::before {
+  content: "*";
+  color: red;
+  font-weight: bold;
+}
+
+textarea {
+  resize: none;
+}
+
+.table tr > th,
+.table tr > td {
+  font-size: .900rem !important;
+}
