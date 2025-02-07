@@ -30,8 +30,23 @@ namespace api.Mappers
                 Email = (user.Email ?? string.Empty),
                 ConfigGender = user.ConfigGender,
                 BirthDate = user.BirthDate,
+                Age = GetAge(user.BirthDate),
                 IsActive = user.IsActive
             };
+        }
+
+        static int GetAge(DateOnly birthDate)
+        {
+            DateOnly currentDate = DateOnly.FromDateTime(DateTime.Now); 
+
+            int years = currentDate.Year - birthDate.Year;
+
+            if (currentDate.Month < birthDate.Month || (currentDate.Month == birthDate.Month && currentDate.Day < birthDate.Day))
+            {
+                years--;
+            }
+
+            return years;
         }
     }
 }

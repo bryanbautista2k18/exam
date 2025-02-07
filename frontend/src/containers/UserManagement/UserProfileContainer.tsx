@@ -24,9 +24,10 @@ const UserProfileContainer = memo((): React.JSX.Element => {
   const tableHeaders: { [key: string]: string }[] = useMemo(() => {
     return [
       { text: "Name", className: "" },
-      { text: "Email", className: "" },
+      { text: "Email Address", className: "" },
       { text: "Gender", className: "" },
-      { text: "Birthdate", className: "" },
+      { text: "Birth Date", className: "" },
+      { text: "Age", className: "" },
       { text: "Status", className: "text-center" }
     ];
   }, []);
@@ -36,6 +37,7 @@ const UserProfileContainer = memo((): React.JSX.Element => {
       "email": null,
       "configGender": (gender: { [key: string]: unknown }) => gender.title,
       "birthDate": null,
+      "age": null
     };
   }, []);
   const [tableData, setTableData] = useState<{ [key: string]: unknown }[]>([]);

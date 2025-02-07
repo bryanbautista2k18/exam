@@ -188,3 +188,4 @@
 /Users/bryanbautista/Desktop/exam/api/obj/Debug/net9.0/api.genruntimeconfig.cache
 /Users/bryanbautista/Desktop/exam/api/obj/Debug/net9.0/ref/api.dll
 /Users/bryanbautista/Desktop/exam/api/bin/Debug/net9.0/Microsoft.Extensions.Configuration.UserSecrets.dll
+/Users/bryanbautista/Desktop/exam/api/obj/Debug/net9.0/api.sourcelink.json

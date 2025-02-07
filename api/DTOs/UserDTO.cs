@@ -14,6 +14,7 @@ namespace api.DTOs
         public string Email { get; init; } = string.Empty;
         public ConfigGender? ConfigGender { get; init; }
         public DateOnly BirthDate { get; init; }
+        public int Age { get; init; }
         public bool IsActive { get; init; }
     }
 
