@@ -8,7 +8,7 @@ To run this project, follow these steps:
 ---------------
 
 1. Navigate to the frontend directory: `cd frontend`
-2. Install dependencies and start the development server: `npm install & npm run dev`
+2. Install dependencies and start the development server: `npm install && npm run dev`
 
 
 ## Backend Setup
